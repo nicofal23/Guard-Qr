@@ -1,0 +1,15 @@
+.sectionquiensomos {
+    font-size: 1.25rem;
+    background-color: $colornegroopacido;
+    display: flex;
+    justify-content: center;
+    margin: 7.5rem;
+    margin-left: 10.625rem;
+    width: 70%;
+    padding: .9375rem;
+    
+    div p {
+        color: $colorblancopuro;
+        font-family: cuerpo; 
+    }
+}

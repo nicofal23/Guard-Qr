@@ -1,0 +1,12 @@
+.titulosh {
+    background-color: $colornegroopacido;
+    color: $colorblancopuro;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    font-family: cuerpo;
+    h2 {
+        font-size: 16px;
+    }
+}

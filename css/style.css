@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.custom-alert {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  z-index: 999; }
+
+@font-face {
+  font-family: titulos;
+  src: url(../assets/fonts/poppins.ttf); }
+
+/**tipografia titulos**/
+@font-face {
+  font-family: cuerpo;
+  src: url(../assets/fonts/inter.ttf); }
+
+/*body*/
+.contenedor {
+  background-image: url("../assets/img/rutaarg.jpg");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+footer {
+  background-color: rgba(0, 0, 0, 0.418);
+  /**icons redes sociales footer**/ }
+  footer .divfooter img {
+    width: 2.5rem; }
+  footer .redessociales {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    footer .redessociales img {
+      width: 2.5rem;
+      margin: .625rem; }
+
+.whatsapplink {
+  position: fixed;
+  right: 1.25rem;
+  z-index: 9999;
+  bottom: 1.25rem; }
+
+header {
+  background-color: rgba(0, 0, 0, 0.418); }
+  header .titulo {
+    display: flex;
+    justify-content: center; }
+    header .titulo img {
+      margin: 20px; }
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  font-family: titulos; }
+  .navbar-collapse a {
+    color: white; }
+
+.boton {
+  background: white; }
+
+.navbar-toggler {
+  background: white; }
+
+.parrafo1, .parrafo2 {
+  font-size: .9375rem;
+  background-color: rgba(0, 0, 0, 0.418);
+  width: 21.875rem;
+  height: 21.875rem;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+  /*parrafo de index*/ }
+  .parrafo1 p, .parrafo2 p {
+    color: white;
+    font-family: cuerpo; }
+
+.parrafo2 {
+  /*parrafo de index*/ }
+  .parrafo2 p {
+    color: white;
+    font-family: cuerpo; }
+
+.sectionclass {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  justify-content: center; }
+  .sectionclass .parrafo1, .sectionclass .parrafo2 {
+    grid-column: 1;
+    margin: 10px; }
+  .sectionclass .parrafo2 {
+    grid-column: 2;
+    margin: 10px; }
+
+.caruseldiv {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+  margin: 10px; }
+
+.sectionquiensomos {
+  font-size: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.418);
+  display: flex;
+  justify-content: center;
+  margin: 7.5rem;
+  margin-left: 10.625rem;
+  width: 70%;
+  padding: .9375rem; }
+  .sectionquiensomos div p {
+    color: white;
+    font-family: cuerpo; }
+
+.h2-instruc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.418);
+  color: #b0b7f0;
+  margin-top: 1.875rem;
+  margin-left: 18.75rem;
+  margin-right: 18.75rem; }
+
+.video {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem; }
+  .video iframe {
+    width: 25rem;
+    height: 25rem; }
+
+.inicio {
+  background-color: black; }
+  .inicio img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 3s ease; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(20px); }
+  10% {
+    opacity: 1; } }
+
+.ingreso {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ingreso img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; }
+  .ingreso h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    z-index: 1; }
+  .ingreso button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 250px; }
+
+.ingreso-button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  animation: cambioFondo 1s infinite; }
+
+@keyframes cambioFondo {
+  0% {
+    background-color: #0414f3; }
+  20% {
+    background-color: #2804f3; }
+  40% {
+    background-color: #0444f3; }
+  60% {
+    background-color: #0487f3; }
+  80% {
+    background-color: #04aff3; }
+  100% {
+    background-color: #04f3d3; } }
+
+.ingreso-button a {
+  color: black;
+  text-decoration: none; }
+
+.titulosh {
+  background-color: rgba(0, 0, 0, 0.418);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+  font-family: cuerpo; }
+  .titulosh h2 {
+    font-size: 16px; }
+
+.tarifa {
+  width: 95%;
+  margin-bottom: 10px; }
+  .tarifa div .card {
+    max-width: 14rem;
+    margin: auto; }
+
+.divcarusel {
+  width: 90%; }
+  .divcarusel div {
+    width: 100%; }
+    .divcarusel div div div img {
+      width: 100%;
+      height: 400px; }
+
+.navbar div button {
+  background: white; }
+
+.todacard {
+  width: 98%; }
+  .todacard .cards {
+    width: 300px;
+    justify-items: center;
+    margin-left: 50px; }
+    .todacard .cards div {
+      width: 14rem;
+      margin: 10px; }
+      .todacard .cards div img {
+        padding: 10px; }
+
+.contactos {
+  width: 100%; }
+  .contactos .contac {
+    width: 200px; }
+    .contactos .contac div {
+      order: 1;
+      width: auto; }
+      .contactos .contac div form {
+        width: 200px; }
+        .contactos .contac div form div label {
+          font-family: cuerpo; }
+
+.carusel2 {
+  margin: 20px;
+  order: 2; }
+  .carusel2 div {
+    max-height: 500px; }
+
+.promo {
+  margin: 10%; }
+
+.cardp {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.emergency-card {
+  width: 60%;
+  background-color: azure;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 10px; }
+  .emergency-card h3 {
+    color: blue; }
+
+.navbar-collapse {
+  display: block; }
+
+@media (max-width: 768px) {
+  .sectionclass {
+    grid-template-columns: 400px;
+    grid-template-rows: 2;
+    justify-items: center; }
+    .sectionclass .parrafo1, .sectionclass .parrafo2 {
+      grid-column: 400px;
+      grid-row: 1;
+      width: 400px; }
+    .sectionclass .parrafo2 {
+      grid-column: 400px;
+      grid-row: 2;
+      width: 400px; }
+  .titulo {
+    justify-content: center; }
+    .titulo img {
+      width: 18.75rem; }
+  .sectionquiensomos {
+    margin-top: .625rem;
+    width: 80%;
+    margin-left: 3.75rem;
+    margin-bottom: .625rem; }
+  .h2-instruc {
+    margin-left: 0px;
+    margin-right: 0px; }
+  .video iframe {
+    width: 100%;
+    height: 15.625rem;
+    margin: .625rem; } }
+
+@media (max-width: 600px) {
+  .sectionquiensomos {
+    font-size: 1rem;
+    margin-left: 3.75rem;
+    margin-bottom: 0px;
+    margin-top: .625rem; } }
+
+@media (max-width: 425px) {
+  header .titulo {
+    justify-content: center; }
+  .sectionclass {
+    justify-items: center; }
+    .sectionclass .parrafo1, .sectionclass .parrafo2 {
+      width: 300px; }
+    .sectionclass .parrafo2 {
+      width: 300px; }
+  .sectionquiensomos {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 0px;
+    margin-top: .625rem; }
+  .titulo img {
+    width: 15.625rem; } }
